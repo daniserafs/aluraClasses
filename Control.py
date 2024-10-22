@@ -5,3 +5,10 @@ for projeto in projetos:
         print(f'Projeto: {projeto}')
     else:
         print('Projeto não disponível.')
+
+encomendas = input('Digite os números das encomendas separados por vígula: ').split(',')
+try:
+    for encomenda in encomendas:
+        print(int(encomenda))
+except ValueError:
+    print('Uma das entradas não é um número válido.')
