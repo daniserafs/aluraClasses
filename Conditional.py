@@ -18,3 +18,18 @@ def age_class(x):
         print('Adulto: acima de 18 anos.')
 age = int(input('Enter your age: '))
 age_class(age)
+
+# user check
+
+USER_NAME = 'Danidinha'
+PASSWORD = '123'
+
+def user_check(user, password):
+    if(user != USER_NAME or password != PASSWORD):
+        print('User or password incorrect!')
+    else:
+        print('You may enter!')
+
+user = input('Enter your username: ')
+password = input('Enter your password: ')
+user_check(user, password)
