@@ -7,3 +7,14 @@ def odd_number(x):
 # don't forget to convert to int when getting the input
 number = int(input('Enter a number: '))
 is_odd = odd_number(number)
+
+# age classification
+def age_class(x):
+    if(x < 12):
+        print('Criança: 0 a 12 anos.')
+    elif(x < 18):
+        print('Adolescente 13 a 18 anos.')
+    else:
+        print('Adulto: acima de 18 anos.')
+age = int(input('Enter your age: '))
+age_class(age)
