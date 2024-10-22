@@ -12,3 +12,19 @@ try:
         print(int(encomenda))
 except ValueError:
     print('Uma das entradas não é um número válido.')
+
+
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+nomes = ['daniela', 'serafim', 'soares', 'danidinha']
+anos = [1996, 2024]
+
+arr = ['\ncrie', 1, 'lista', 'e', 'utilize', 1, 'loop', 'for', 'para', 'percorrer', 'todos', 'os', 'elementos', 'da', 'lista']
+
+for i in arr:
+    print(i)
+
+resultado = 0
+for numero in numeros:
+    if (numero % 2 != 0):
+        resultado += numero
+print("a soma dos numeros impares é: ", resultado)
