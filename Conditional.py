@@ -25,11 +25,29 @@ USER_NAME = 'Danidinha'
 PASSWORD = '123'
 
 def user_check(user, password):
-    if(user != USER_NAME or password != PASSWORD):
-        print('User or password incorrect!')
-    else:
+    if(user == USER_NAME and password == PASSWORD):
         print('You may enter!')
+    else:
+        print('User or password incorrect!')
 
 user = input('Enter your username: ')
 password = input('Enter your password: ')
 user_check(user, password)
+
+# quadrants
+
+def quadrant(x, y):
+    if(x > 0 and y > 0):
+        print('1st quadrant')
+    elif( x < 0 and y > 0):
+        print('2nd quadrant')
+    elif(x < 0 and y < 0):
+        print('3rd quadrant')
+    elif(x > 0 and y < 0):
+        print('4th quadrant')
+    else:
+        print('Point is origin')
+
+x = int(input('Enter 1st coordenate: '))
+y = int(input('Enter 2nd coordenate: '))
+quadrant(x, y)
