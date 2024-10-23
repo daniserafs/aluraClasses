@@ -11,7 +11,7 @@ def mostrar_projetos():
             print('Projeto não disponível.')
 
 def mostrar_encomendas():
-    encomendas = input('Digite os números das encomendas separados por vígula: ').split(',')
+    encomendas = input('Digite os números das encomendas separados por vírgula: ').split(',')
     try:
         for encomenda in encomendas:
             print(int(encomenda))
@@ -40,12 +40,27 @@ def tabuada(x):
     for numero in numeros:
         print (f'{x} x {numero} = {numero * x}')
 
-def soma():
+def mostrar_soma():
     soma = 0
-    novos_numeros = [23, 34, 12, 545, 65, 232, 12]
+    novos_numeros = [23, 21, 43, 42]
     for numero in novos_numeros:
         soma += numero
     print("a soma de todos os numeros é: ", soma)
+
+def mostrar_media():
+    aux = 0
+    
+    try:
+        for numero in numeros:
+            aux += numero
+            
+        print('a média é: ', aux/len(numeros))
+        print(aux)
+    except ZeroDivisionError:
+        
+        print('Divisao por zero nao existe')
+    pass
+
 
 mostrar_projetos()
 mostrar_encomendas()
@@ -54,4 +69,5 @@ soma_impares()
 reorganizar_lista()
 x = int(input('\nInforme o numero que você deseja a tabuada: '))
 tabuada(x)
-soma()
+mostrar_soma()
+mostrar_media()
