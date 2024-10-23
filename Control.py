@@ -28,3 +28,6 @@ for numero in numeros:
     if (numero % 2 != 0):
         resultado += numero
 print("a soma dos numeros impares é: ", resultado)
+
+numeros.sort(reverse=True)
+print(numeros)
