@@ -31,3 +31,11 @@ print("a soma dos numeros impares é: ", resultado)
 
 numeros.sort(reverse=True)
 print(numeros)
+numeros.sort()
+
+def tabuada(x):
+    for numero in numeros:
+        print (f'{x} x {numero} = {numero * x}')
+
+x = int(input('Informe o numero que você deseja a tabuada: '))
+tabuada(x)
