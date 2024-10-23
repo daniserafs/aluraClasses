@@ -57,11 +57,23 @@ def mostrar_media():
         print('a média é: ', aux/len(numeros))
         print(aux)
     except ZeroDivisionError:
-        
         print('Divisao por zero nao existe')
-    pass
 
+def atualizar_livro():
+    livro = {
+        'titulo':'Aprendendo Python',
+        'autor' : 'Frabrícico Silva',
+        'ISBN' : '12345',
+        'preco' : 59.90,
+        'em_estoque':True
 
+    }
+    
+    print(livro)
+    livro['preco'] = 69.90
+    print(livro)
+
+atualizar_livro()
 mostrar_projetos()
 mostrar_encomendas()
 mostrar_lista()
