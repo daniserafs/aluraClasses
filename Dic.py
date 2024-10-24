@@ -26,10 +26,16 @@ def add_profession(people):
 def delete_item(people):
     del people['city']
 
+def power_to():
+    power = {'1 x 1' : 1 * 1, '2 x 2' : 2 * 2, "3 x 3": 3 * 3, "4 x 4" : 4 * 4, '5 x 5' : 5 * 5}
+    print(power)
+
+power_to()
 people = first_dictionary()
 new_people= update_dictionary(people)
 add_profession(new_people)
 print(people)
 delete_item(people)
 print(people)
+
 
