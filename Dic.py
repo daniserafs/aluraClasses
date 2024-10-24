@@ -30,6 +30,21 @@ def power_to():
     power = {'1 x 1' : 1 * 1, '2 x 2' : 2 * 2, "3 x 3": 3 * 3, "4 x 4" : 4 * 4, '5 x 5' : 5 * 5}
     print(power)
 
+def verify_key(x):
+    thisdict =	{
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'year': 1964
+    }
+    for a in thisdict.keys():
+        if(a == x):
+            print(f'key {x} verified')
+        else:
+            print('key not found')
+
+
+chave = input('digite o campo que quer verificar: ')
+verify_key(chave)
 power_to()
 people = first_dictionary()
 new_people= update_dictionary(people)
