@@ -44,3 +44,11 @@ else:
 
 categoria = Restaurante.categoria
 restaurante_praca.nome = "Bistrô"
+
+restaurante_pizza = Restaurante()
+
+restaurante_pizza.nome = 'Pizza Place'
+restaurante_pizza.categoria = 'Fast Food'
+print(f'A categoria do restaurante {restaurante_pizza.nome} é {restaurante_pizza.categoria}')
+restaurante_pizza.ativo = True
+print(f'O Restaurante {restaurante_praca.nome} tem a categoria: {restaurante_praca.categoria}')
