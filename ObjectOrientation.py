@@ -41,3 +41,6 @@ if(restaurante_praca.ativo == False):
     print(f'O Restaurante {restaurante_praca.nome} está inativo')
 else:
     print(f'O Restaurante {restaurante_praca.nome} está ativo')
+
+categoria = Restaurante.categoria
+restaurante_praca.nome = "Bistrô"
