@@ -42,7 +42,15 @@ def verify_key(x):
         else:
             print('key not found')
 
+def word_frequency():
+    phrase = "BTS Jin debuts solo album in October"
+    word_count = {}
+    words = phrase.split()
+    for word in words:
+        word_count[word] = word_count.get(word, 0) + 1
+    print(f'the word frenquency is: {word_count}')
 
+word_frequency()
 chave = input('digite o campo que quer verificar: ')
 verify_key(chave)
 power_to()
