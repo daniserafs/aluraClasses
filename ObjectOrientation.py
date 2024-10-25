@@ -20,3 +20,24 @@ music_apt.artist = 'ROSÉ and Bruno Mars'
 music_apt.length = 254
 
 print(f'Song: {music_the_astronaut.name} - Artist: {music_the_astronaut.artist} - {music_the_astronaut.length} segundos')
+
+class Restaurante:
+    nome = ''
+    categoria = ''
+    ativo = False
+
+
+restaurante_praca = Restaurante()
+restaurante_praca.nome = 'Praça'
+restaurante_praca.categoria = 'Italiana'
+
+restaurante_dandadan = Restaurante()
+
+restaurantes = [restaurante_praca, restaurante_dandadan]
+
+print(restaurante_praca.ativo)
+
+if(restaurante_praca.ativo == False):
+    print(f'O Restaurante {restaurante_praca.nome} está inativo')
+else:
+    print(f'O Restaurante {restaurante_praca.nome} está ativo')
