@@ -18,3 +18,5 @@ music_apt = Music()
 music_apt.name = 'APT.'
 music_apt.artist = 'ROSÉ and Bruno Mars'
 music_apt.length = 254
+
+print(f'Song: {music_the_astronaut.name} - Artist: {music_the_astronaut.artist} - {music_the_astronaut.length} segundos')
