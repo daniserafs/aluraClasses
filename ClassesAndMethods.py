@@ -46,3 +46,20 @@ restaurant_dandadan = Restaurant('Pizza Express', 'Italiana', '18h30 - 01h00', 5
 #restaurantes = [restaurante_praca, restaurante_dandadan]
 
 Restaurant.listing_restaurants()
+
+class Client:
+    clients = []
+    def __init__(self, name, id, age):
+        self.name = name
+        self.id = id
+        self.age = age
+        self.active = False
+        Client.clients.append(self)
+
+    def listing_clients():
+        for client in Client.clients:
+            print(f'{client.name} | {client.age} | {client.id}')
+
+client1 = Client('danidinha', '12300', '28')
+
+Client.listing_clients()
