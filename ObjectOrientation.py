@@ -22,16 +22,17 @@ music_apt.length = 254
 print(f'Song: {music_the_astronaut.name} - Artist: {music_the_astronaut.artist} - {music_the_astronaut.length} segundos')
 
 class Restaurante:
-    nome = ''
-    categoria = ''
-    ativo = False
+    def __init__(self, nome, categoria):
+        self.nome = nome
+        self.categoria = categoria
+        self.ativo = False
 
 
-restaurante_praca = Restaurante()
-restaurante_praca.nome = 'Praça'
-restaurante_praca.categoria = 'Italiana'
+restaurante_praca = Restaurante('Praça', 'Gourmet')
+#restaurante_praca.nome = 'Praça'
+#restaurante_praca.categoria = 'Italiana'
 
-restaurante_dandadan = Restaurante()
+restaurante_dandadan = Restaurante('Pizza Express', 'Italiana')
 
 restaurantes = [restaurante_praca, restaurante_dandadan]
 
