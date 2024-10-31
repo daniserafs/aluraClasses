@@ -41,3 +41,30 @@ class PythonicBankAccount:
 
 account4 = PythonicBankAccount('Jin', 999000000000)
 print(f'Owner of account number 4: {account4.owner}')
+
+class BankClient:
+    def __init__(self, name, age, adress, cpf, profession):
+        self.name = name
+        self.age = age
+        self.adress = adress
+        self.cpf = cpf
+        self.profession = profession
+
+    @classmethod
+    def create_account(cls, owner, initial_balance):
+        account = PythonicBankAccount(owner, initial_balance)
+        return account
+
+    def __str__(self) -> str:
+        return f'{self.name} | {self.age} | {self.adress} | {self.cpf} | {self.profession}'
+
+client1 = BankClient('Julieta', 20, 'A Street', '745.014.360-77', 'Backend')
+client2 = BankClient('Julio', 25, 'B Street', '971.091.030-21', 'Frontend')
+client3 = BankClient('Julia', 19, 'C Street', '717.997.600-81', 'Student')
+
+account_client1 = BankClient.create_account('Ana', 2000)
+print(f'{account_client1.owner} account was created with initial balance of R${account_client1.balance}')
+
+print(client1)
+print(client2)
+print(client3)
