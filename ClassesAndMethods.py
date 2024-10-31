@@ -79,3 +79,40 @@ class Book():
 
     def increase_pages(self, amount):
         self.pages += amount
+
+
+class Person():
+    people=[]
+    def __init__(self, name = '', age= 0, profession = ''):
+        self.name = name
+        self.age = age
+        self.profession = profession
+        Person.people.append(self)
+
+    def __str__(self):
+        return f'My name is {self.name}. I am {self.age} years old. I am a {self.profession}'
+    
+    @property
+    def greetings(self):
+        if self.profession:
+            return f'Hello, I am {self.name}! I am a {self.profession} and I like computers a lot'
+        else:
+            return f'Hello, I am {self.name}'
+
+    def happy_birthday(self):
+        self.age += 1
+
+    def listing_people():
+        for person in Person.people:
+            print(f'{person.name} | {person.age} | {person.profession}')
+
+person1 = Person('danidinha', 28, 'Computer Scientist')
+person2 = Person('Kim Namjoon',30, 'Singer' )
+person3 = Person('Jimin', 29, 'Singer' )
+print(person1)
+person1.happy_birthday()
+print(person1)
+Person.listing_people()
+person2.happy_birthday()
+person3.happy_birthday()
+Person.listing_people()
