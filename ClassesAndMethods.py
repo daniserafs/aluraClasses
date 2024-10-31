@@ -63,3 +63,10 @@ class Client:
 client1 = Client('danidinha', '12300', '28')
 
 Client.listing_clients()
+
+class Book():
+    def __init__(self, title='', author='', pages=0):
+        self.title = title
+        self.author = author
+        self.pages = pages
+        
