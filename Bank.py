@@ -21,3 +21,20 @@ BankAccount.activate_account(account3)
 print(f'After activating: Is account active? {account3._active}')
 
 
+class PythonicBankAccount:
+    def __init__(self, owner, balance):
+        self._owner = owner
+        self._balance = balance
+        self._active = False
+
+    @property
+    def owner(self):
+        return self._owner
+    
+    @property
+    def balance(self):
+        return self._balance
+    
+    @property
+    def active(self):
+        return self._active
