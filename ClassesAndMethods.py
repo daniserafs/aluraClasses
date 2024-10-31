@@ -69,4 +69,13 @@ class Book():
         self.title = title
         self.author = author
         self.pages = pages
-        
+
+    def __str__(self):
+        return f'{self.title} by {self.author} - {self.pages} pages'
+    
+    @property
+    def author_title(self):
+        return f'{self.title} by {self.author}'
+
+    def increase_pages(self, amount):
+        self.pages += amount
