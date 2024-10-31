@@ -38,3 +38,6 @@ class PythonicBankAccount:
     @property
     def active(self):
         return self._active
+
+account4 = PythonicBankAccount('Jin', 999000000000)
+print(f'Owner of account number 4: {account4.owner}')
